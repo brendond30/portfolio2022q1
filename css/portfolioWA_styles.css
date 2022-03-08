@@ -1,0 +1,183 @@
+:root {
+    /* Colors */
+    --Grey1: #1D1D1D;
+    --Grey2: #131313;
+    --Grey3: #2A2A2A;
+    --White1: #FFFFFF;
+    --White2: #D9D9D9;
+    --accent: #4915AF;
+    /* Font Weights */
+    --light: 300;
+    --regular: 400;
+    --semibold: 600;
+    --bold: 700;
+    --black: 900;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: var(--Grey1);
+    width: 100vw;
+    font-size: 16px;
+    color: var(--White1);
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*    ~    Syntax Styles    ~    */
+
+ul, li, a, href {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*    ~    Font Styles    ~    */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+}
+
+p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.563rem;
+}
+
+.font-black {
+    font-weight: var(--black);
+}
+
+.font-bold {
+    font-weight: var(--bold);
+}
+
+.font-semibold {
+    font-weight: var(--semibold);
+}
+
+.font-regular {
+    font-weight: var(--regular);
+}
+
+.font-light {
+    font-weight: var(--light);
+}
+
+.font-white {
+    color: var(--White1);
+}
+
+.font-offwhite {
+    color: var(--White2);
+}
+
+/*    ~    Social Media Buttons    ~    */
+
+#social-panel {
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Grey3);
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-panel-icons {
+    height: 25px;
+    padding: 10px;
+}
+
+/*    ~    Nav Bar    ~    */
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 12.5vh;
+    background-color: var(--Grey1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+/*    ~    Main Section Setup    ~    */
+
+#main {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*    ~    Intermission Styles    ~    */
+
+#intermission {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*    ~    Card Row Styles    ~    */
+
+.card-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 21.875rem;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 21.875rem;
+    border: 2px solid var(--Grey2);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0);
+    transition: 500ms;
+    float: left;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    opacity: 75%;
+}
+
+.cover-fit {
+    height: 21.875rem;
+}
